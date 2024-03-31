@@ -10,3 +10,5 @@ vim.keymap.set(
 )
 
 vim.keymap.set("n", "<leader>bT", ":ToggleTerm direction=horizontal <CR>", { desc = "Open horizontal terminal split" })
+
+vim.api.nvim_set_keymap("i", "<S-CR>", "copilot#Accept()", { noremap = true, silent = true, expr = true })
